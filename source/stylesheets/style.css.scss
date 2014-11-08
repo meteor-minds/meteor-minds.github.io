@@ -1,12 +1,48 @@
-// Import Base Styles
-@import "base/normalize"
-// @import "base/all_your"
+@import "bourbon/bourbon";
+@import "neat/neat";
 
-// Import Layout Styles
-// @import "layout/grid"
+*, *:before, *:after {
+	box-sizing: border-box;
+}
 
-// Import Module Styles
-// @import "modules/buttons"
+body {
+  margin: 0;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 125%;
+}
 
-// Import State Styles
-// @import "states/validation"
+header.banner {
+	@include linear-gradient(#332233, #441244);
+	.container {
+		padding: 2em 0 3em 2em;
+	}
+	h1 {
+		text-align: center;
+		margin: 0;
+		img {
+			width: 18rem;
+		}
+	}
+}
+
+nav.navigation {
+	text-align: center;
+	ul {
+		list-style: none;
+		padding-left: 0;
+	}
+	li {
+	  display: inline-block;
+		a {
+			color: #441244;
+			display: block;
+		  padding: 0.25em 2em;
+		  text-decoration: none;
+		}
+	}
+}
+
+.container {
+	@include outer-container;
+	padding: 0 1em;
+}
