@@ -11,6 +11,15 @@ body {
   margin: 0;
   font-family: 'Droid Sans', sans-serif;
   font-size: 125%;
+  line-height: 1.6;
+
+  a {
+			color: #441244;
+		  text-decoration: none;
+		}
+	a:hover{
+		color: #f47f3b;
+	}
 }
 
 header.banner {
@@ -36,10 +45,8 @@ nav.navigation {
 	li {
 	  display: inline-block;
 		a {
-			color: #441244;
 			display: block;
 		  padding: 0.25em 2em;
-		  text-decoration: none;
 		}
 	}
 }
@@ -51,3 +58,24 @@ nav.navigation {
 
 
 // ========About Page========
+.about_text{
+	@include span-columns(7);
+}
+.organizers{
+	@include span-columns(5);
+	background-color: #eee;
+	padding: 1em;
+	padding-top: 0;
+}
+
+.dan, .ne {
+	@include span-columns(2.5 of 5);
+	text-align: center;
+	img{
+		width: 100%;
+	}
+
+
+}
+
+
