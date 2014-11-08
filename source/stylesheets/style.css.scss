@@ -4,7 +4,7 @@ $max-width: em(840) !global;
 @import "neat/neat";
 
 *, *:before, *:after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -23,17 +23,17 @@ body {
 }
 
 header.banner {
-	@include linear-gradient(#332233, #441244);
-	.container {
-		padding: 2em 0 3em 2em;
-	}
-	h1 {
-		text-align: center;
-		margin: 0;
-		img {
-			width: 18rem;
-		}
-	}
+  @include linear-gradient(#332233, #441244);
+  .container {
+    padding: 2em 0 3em 2em;
+  }
+  h1 {
+    text-align: center;
+    margin: 0;
+    img {
+      width: 18rem;
+    }
+  }
 }
 
 nav.navigation {
@@ -52,10 +52,28 @@ nav.navigation {
 }
 
 .container {
-	@include outer-container;
-	padding: 0 1em;
+  @include outer-container;
+  padding: 0 1em;
 }
 
+
+// ========Home Page=========
+
+section.description {
+  .container {
+    background: #f9f4e0;
+    padding: 1em 2em;
+  }
+}
+
+section.event {
+  padding: 2em 0;
+}
+
+section.thanks {
+  background: #eee;
+  padding: 2em 0;
+}
 
 // ========About Page========
 .about_text{
@@ -75,7 +93,4 @@ nav.navigation {
 		width: 100%;
 	}
 
-
 }
-
-
