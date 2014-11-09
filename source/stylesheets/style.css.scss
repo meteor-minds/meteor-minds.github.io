@@ -59,12 +59,34 @@ nav.navigation {
 
 // ========Home Page=========
 
-section.description {
-  .container {
-    background: #f9f4e0;
-    padding: 1em 2em;
-  }
+.about{
+	@include span-columns(12);
+	padding-top: 2em;
 }
+
+.about_text{
+	@include span-columns(7 of 12);
+	background: #f9f4e0;
+	padding: 1em 2em;
+}
+
+.event{
+	@include span-columns(5 of 12);
+}
+
+
+section.info{
+	@include span-columns(12)
+}
+
+.thanks{
+	@include span-columns(8 of 12);
+}
+
+.org{
+	@include span-columns(4 of 12)
+}
+
 
 section.event {
   padding: 2em 0;
@@ -76,21 +98,21 @@ section.thanks {
 }
 
 // ========About Page========
-.about_text{
-	@include span-columns(7);
-}
-.organizers{
-	@include span-columns(5);
-	background-color: #eee;
-	padding: 1em;
-	padding-top: 0;
-}
+// .about_text{
+// 	@include span-columns(7);
+// }
+// .organizers{
+// 	@include span-columns(5);
+// 	background-color: #eee;
+// 	padding: 1em;
+// 	padding-top: 0;
+// }
 
-.dan, .ne {
-	@include span-columns(2.5 of 5);
-	text-align: center;
-	img{
-		width: 100%;
-	}
+// .dan, .ne {
+// 	@include span-columns(2.5 of 5);
+// 	text-align: center;
+// 	img{
+// 		width: 100%;
+// 	}
 
-}
+// }
