@@ -1,5 +1,6 @@
 Meteor Minds website
 ====================
+Meteor Minds is a forum for members of the London tech community to come together to discuss mental health issues.
 
 Built using Middleman.
 
