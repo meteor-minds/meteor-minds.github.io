@@ -59,19 +59,15 @@ nav.navigation {
 
 // ========Home Page=========
 
-.about{
-  @include span-columns(12);
+.about {
+  @include span-columns(7 of 12);
   padding-top: 2em;
 }
 
-.about_text{
-  @include span-columns(7 of 12);
+.event {
+  @include span-columns(5 of 12);
   background: #f9f4e0;
   padding: 1em 2em;
-}
-
-.event{
-  @include span-columns(5 of 12);
 }
 
 
