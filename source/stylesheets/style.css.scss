@@ -25,13 +25,29 @@ body {
 
 header.banner {
   @include linear-gradient(#332233, #441244);
-  background-image: url(/images/anza-borrego-starscape.jpg);
-  background-image: url(http://res.cloudinary.com/fleetnation/image/private/c_fit,w_1120/g_south,l_text:style_gothic2:%C2%A9%20Javier%20L%C3%B3pez%20Pe%C3%B1a,o_20,y_10/g_center,l_watermark4,o_25,y_50/v1404078618/y7kvwznrvxzivz2mbzuv.jpg);
-  
+  background-image: url(/images/header-bg-400.jpg);
+  @include media(min-device-pixel-ratio 1.5) {
+    background-image: url(/images/header-bg-800.jpg);
+  }
+  @include media(min-width 480px max-width 1024px) {
+    background-image: url(/images/header-bg-800.jpg);
+  }
+  @include media(min-width 480px max-width 1024px min-device-pixel-ratio 1.5) {
+    background-image: url(/images/header-bg-1200.jpg);
+  }
+  @include media(min-width 1025px max-width 1600px) {
+    background-image: url(/images/header-bg-1200.jpg);
+  }
+  @include media(min-width 1025px max-width 1600px min-device-pixel-ratio 1.5) {
+    background-image: url(/images/header-bg-2400.jpg);
+  }
+  @include media(min-width 1601px) {
+    background-image: url(/images/header-bg-2400.jpg);
+  }
   background-position: center center;
   background-size: cover;
   .container {
-    padding: 8% 0 17% 2em;
+    padding: 10% 0 10% 2em;
   }
   h1 {
     text-align: center;
