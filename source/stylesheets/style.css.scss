@@ -25,21 +25,17 @@ body {
 
 header.banner {
   @include linear-gradient(#332233, #441244);
-  background-image: url(/images/header-bg-400.jpg);
-  @include media(min-device-pixel-ratio 1.5) {
-    background-image: url(/images/header-bg-800.jpg);
+  @include media(max-width 480px) {
+    background-image: url(/images/header-bg-400.jpg);
+    @include hidpi(1.5) { background-image: url(/images/header-bg-800.jpg); }
   }
-  @include media(min-width 480px max-width 1024px) {
+  @include media(min-width 481px max-width 1024px) {
     background-image: url(/images/header-bg-800.jpg);
-  }
-  @include media(min-width 480px max-width 1024px min-device-pixel-ratio 1.5) {
-    background-image: url(/images/header-bg-1200.jpg);
+    @include hidpi(1.5) { background-image: url(/images/header-bg-1200.jpg); }
   }
   @include media(min-width 1025px max-width 1600px) {
     background-image: url(/images/header-bg-1200.jpg);
-  }
-  @include media(min-width 1025px max-width 1600px min-device-pixel-ratio 1.5) {
-    background-image: url(/images/header-bg-2400.jpg);
+    @include hidpi(1.5) { background-image: url(/images/header-bg-2400.jpg); }
   }
   @include media(min-width 1601px) {
     background-image: url(/images/header-bg-2400.jpg);
