@@ -84,7 +84,7 @@ nav.navigation {
 
 
 section.info{
-  @include span-columns(12)
+  @include span-columns(12);
 }
 
 .thanks{
@@ -92,7 +92,16 @@ section.info{
 }
 
 .org{
-  @include span-columns(4 of 12)
+  @include span-columns(4 of 12);
+  text-align: center;
+}
+
+.dan{
+@include span-columns(2 of 4)
+}
+
+.ne{
+@include span-columns(2 of 4)
 }
 
 
