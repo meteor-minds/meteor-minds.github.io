@@ -135,14 +135,12 @@ section.resources{
 
 .Charity{
   @include span-columns(1 of 4);
+  text-align: center;
   &:nth-child(4n+4) {
     @include omega;
   }
 }
-.Char2{
-  @include span-columns(1 of 4);
-  @include omega;
-}
+
 
 // ========About Page========
 // .about_text{
