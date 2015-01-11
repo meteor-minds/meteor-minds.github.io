@@ -130,7 +130,7 @@ section.thanks {
 
 //resources section
 section.resources{
-  @include span-columns(12);
+  @include row;
 }
 
 .Charity{
